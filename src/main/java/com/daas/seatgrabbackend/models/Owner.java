@@ -7,6 +7,8 @@ import lombok.NoArgsConstructor;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
+import java.time.LocalDateTime;
+
 @Document
 @Data
 @AllArgsConstructor
@@ -21,4 +23,6 @@ public class Owner {
     private String password;
     private String dob;
     private Theater theater;
+    private String isEmailVerified;
+    private LocalDateTime createdAt;
 }

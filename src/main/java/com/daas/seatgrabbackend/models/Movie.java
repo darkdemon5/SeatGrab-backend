@@ -7,6 +7,8 @@ import lombok.NoArgsConstructor;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
+import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.util.List;
 
 @Document
@@ -19,7 +21,7 @@ public class Movie {
     private Long id;
 
     private String name;
-    private String releaseDate;
+    private LocalDate releaseDate;
     private String poster;
     private List<String> cast;
     private List<String> director;
@@ -30,6 +32,6 @@ public class Movie {
     private List<String> languages;
     private List<String> ratings;
     private String synopsis;
-    private Theater theater;
-//    private String theaterId;
+    private String theaterId;
+    private LocalDateTime createdAt;
 }

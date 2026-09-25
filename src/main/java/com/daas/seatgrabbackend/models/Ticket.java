@@ -7,6 +7,9 @@ import lombok.NoArgsConstructor;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
+import java.time.LocalDateTime;
+import java.util.List;
+
 @Document
 @Data
 @AllArgsConstructor
@@ -16,8 +19,9 @@ public class Ticket {
     @Id
     private Long id;
 
-    private Booking booking;
-    private String seatNumber;
+    private String bookingId;
+    private List<String> seatNumber;
     private String status;
+    private LocalDateTime createdAt;
 
 }

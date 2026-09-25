@@ -8,6 +8,7 @@ import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 import java.sql.Date;
+import java.time.LocalDateTime;
 
 @Document
 @Data
@@ -22,5 +23,5 @@ public class Payment {
     private Long amount;
     private String payMethod;
     private boolean done;
-    private Date createdAt;
+    private LocalDateTime createdAt;
 }

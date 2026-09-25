@@ -7,6 +7,8 @@ import lombok.NoArgsConstructor;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
+import java.time.LocalDateTime;
+
 @Document
 @Data
 @AllArgsConstructor
@@ -16,11 +18,11 @@ public class Showtime {
     @Id
     private Long id;
 
-    private int startTime;
+    private LocalDateTime startTime;
     private int totalSeats;
     private int acquiredSeats;
     private int availableSeats;
     private int price;
-    private Movie movie;
-    private Theater theater;
+    private String movieId;
+    private String theaterId;
 }

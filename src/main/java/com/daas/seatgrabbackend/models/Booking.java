@@ -7,6 +7,7 @@ import lombok.NoArgsConstructor;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
+import java.time.LocalDateTime;
 import java.util.List;
 
 @Document
@@ -18,9 +19,10 @@ public class Booking {
     @Id
     private Long id;
 
-    private User user;
-    private Showtime showtime;
+    private String userId;
+    private String showtimeId;
     private List<String> seatBooked;
-    private Payment payment;
+    private String paymentId;
+    private LocalDateTime bookingDate;
 
 }
