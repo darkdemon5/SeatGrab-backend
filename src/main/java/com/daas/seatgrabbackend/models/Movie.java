@@ -28,10 +28,11 @@ public class Movie {
     private List<String> producer;
     private String intro;
     private String genre;
-    private String duration;
+    private int duration;
+    private String ratings;
     private List<String> languages;
-    private List<String> ratings;
+    private List<String> reviews;
     private String synopsis;
-    private String theaterId;
+    private Long theaterId;
     private LocalDateTime createdAt;
 }

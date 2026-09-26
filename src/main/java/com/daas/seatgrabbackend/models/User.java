@@ -24,10 +24,10 @@ public class User {
     private String password;
     private String dob;
     private String city;
-    private List<Booking> bookings;
-    private List<Payment> payments;
-    private List<Ticket> tickets;
-    private String isEmailVerified;
+    private List<Long> bookingsId;
+    private List<Long> paymentsId;
+    private List<Long> ticketsId;
+    private boolean isEmailVerified;
     private LocalDateTime createdAt;
 
 }

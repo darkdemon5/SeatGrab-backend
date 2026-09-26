@@ -22,7 +22,7 @@ public class Theater {
     private String name;
     private String address;
     private int nosSeats;
-    private Owner owner;
-    private List<Movie> movies;
+//    private String ownerId;
+    private List<String> moviesId;
     private LocalDateTime createdAt;
 }
