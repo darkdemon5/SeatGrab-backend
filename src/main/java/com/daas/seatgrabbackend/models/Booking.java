@@ -17,7 +17,7 @@ import java.util.List;
 public class Booking {
 
     @Id
-    private Long id;
+    private String id;
 
     private String userId;
     private String showtimeId;

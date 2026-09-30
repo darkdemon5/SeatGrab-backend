@@ -17,13 +17,13 @@ import java.time.LocalDateTime;
 public class Showtime {
 
     @Id
-    private Long id;
+    private String id;
 
     private LocalDateTime startTime;
     private int totalSeats;
     private int acquiredSeats;
     private int availableSeats;
     private BigDecimal price;
-    private Long movieId;
-    private Long theaterId;
+    private String movieId;
+    private String theaterId;
 }

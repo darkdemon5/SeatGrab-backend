@@ -2,6 +2,7 @@ package com.daas.seatgrabbackend.models;
 
 
 import com.daas.seatgrabbackend.enums.PaymentMethod;
+import com.daas.seatgrabbackend.enums.PaymentStatus;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -18,11 +19,11 @@ import java.time.LocalDateTime;
 public class Payment {
 
     @Id
-    private Long id;
+    private String id;
 
     private String userId;
     private BigDecimal amount;
     private PaymentMethod payMethod;
-    private boolean done;
+    private PaymentStatus paymentStatus;
     private LocalDateTime createdAt;
 }

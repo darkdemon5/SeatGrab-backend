@@ -17,12 +17,12 @@ import java.util.List;
 public class Theater {
 
     @Id
-    private Long id;
+    private String id;
 
     private String name;
     private String address;
     private int nosSeats;
-//    private String ownerId;
+    private String ownerId;
     private List<String> moviesId;
     private LocalDateTime createdAt;
 }

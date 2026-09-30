@@ -17,16 +17,16 @@ import java.util.List;
 public class User {
 
     @Id
-    private Long id;
+    private String id;
 
     private String name;
     private String email;
     private String password;
     private String dob;
     private String city;
-    private List<Long> bookingsId;
-    private List<Long> paymentsId;
-    private List<Long> ticketsId;
+    private List<String> bookingsId;
+    private List<String> paymentsId;
+    private List<String> ticketsId;
     private boolean isEmailVerified;
     private LocalDateTime createdAt;
 

@@ -7,5 +7,7 @@ import org.springframework.stereotype.Repository;
 @Repository
 public interface OwnerRepo extends MongoRepository<Owner, Long> {
 
-    Owner getOwnerById(Long ownerId);
+    Owner getOwnerById(String ownerId);
+
+    boolean existsByEmail(String email);
 }

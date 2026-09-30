@@ -17,7 +17,7 @@ import java.util.List;
 public class Ticket {
 
     @Id
-    private Long id;
+    private String id;
 
     private String bookingId;
     private List<String> seatNumber;

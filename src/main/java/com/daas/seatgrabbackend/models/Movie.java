@@ -18,7 +18,7 @@ import java.util.List;
 public class Movie {
 
     @Id
-    private Long id;
+    private String id;
 
     private String name;
     private LocalDate releaseDate;
@@ -33,6 +33,6 @@ public class Movie {
     private List<String> languages;
     private List<String> reviews;
     private String synopsis;
-    private Long theaterId;
+    private String theaterId;
     private LocalDateTime createdAt;
 }
