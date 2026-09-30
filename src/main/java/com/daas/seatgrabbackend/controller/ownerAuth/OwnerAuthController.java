@@ -3,7 +3,6 @@ package com.daas.seatgrabbackend.controller.ownerAuth;
 
 import com.daas.seatgrabbackend.dto.ownerDto.OwnerInfoDTO;
 import com.daas.seatgrabbackend.dto.ownerDto.OwnerSignupRequestDto;
-import com.daas.seatgrabbackend.dto.ownerDto.OwnerSignupResponseDto;
 import com.daas.seatgrabbackend.service.ownerService.OwnerAuthService;
 import jakarta.validation.Valid;
 import org.springframework.http.ResponseEntity;
