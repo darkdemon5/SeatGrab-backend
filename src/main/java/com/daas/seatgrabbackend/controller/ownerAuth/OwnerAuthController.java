@@ -2,6 +2,7 @@ package com.daas.seatgrabbackend.controller.ownerAuth;
 
 
 import com.daas.seatgrabbackend.dto.ownerDto.OwnerInfoDTO;
+import com.daas.seatgrabbackend.dto.ownerDto.OwnerSigninRequest;
 import com.daas.seatgrabbackend.dto.ownerDto.OwnerSignupRequestDto;
 import com.daas.seatgrabbackend.service.ownerService.OwnerAuthService;
 import jakarta.validation.Valid;
@@ -29,5 +30,10 @@ public class OwnerAuthController {
     public ResponseEntity<?> signupOwner(@RequestBody @Valid OwnerSignupRequestDto ownerSignupRequestDto){
 
         return ownerAuthService.signupOwner(ownerSignupRequestDto);
+    }
+
+    @PostMapping("/signin")
+    public ResponseEntity<?> signinOwner(@RequestBody OwnerSigninRequest ownerSigninRequest){
+        return ownerAuthService.signinOwner(ownerSigninRequest);
     }
 }

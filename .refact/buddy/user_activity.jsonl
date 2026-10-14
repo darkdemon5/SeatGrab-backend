@@ -1,0 +1,20 @@
+{"type":"chat_started","chat_id":"80ac0e8f-d470-46eb-b577-59d12fddf543","first_user_text_preview":"Start a companion investigation for a possible Refact product issue.\n\nImportant:","ts":"2026-10-10T17:22:12.218484300Z"}
+{"type":"chat_started","chat_id":"ae3cdaa3-dda6-4bc3-b331-43b7d3dfaf47","first_user_text_preview":"Start a companion investigation for a possible Refact product issue.\n\nImportant:","ts":"2026-10-10T17:23:32.414039500Z"}
+{"type":"chat_started","chat_id":"5305538f-f4cf-42c0-ac7e-b73de99c1110","first_user_text_preview":"Start a companion investigation for a possible Refact product issue.\n\nImportant:","ts":"2026-10-10T17:24:14.980874100Z"}
+{"type":"chat_started","chat_id":"0a717ed9-55eb-44c0-ac20-50d5de801e5c","first_user_text_preview":"Start a companion investigation for a possible Refact product issue.\n\nImportant:","ts":"2026-10-10T17:25:58.024664400Z"}
+{"type":"file_opened","path":"C:[REDACTED_PATH] Objects/Projects/SeatGrab-backend/src/main/java\n...[truncated]","ts":"2026-10-10T17:26:56.772Z"}
+{"type":"snippet_selected","path":"C:[REDACTED_PATH] Objects/Projects/SeatGrab-backend/src/main/java\n...[truncated]","lines":[1,1],"ts":"2026-10-10T17:26:57.003Z"}
+{"type":"file_opened","path":"C:[REDACTED_PATH] Objects/Projects/SeatGrab-backend/src/main/java\n...[truncated]","ts":"2026-10-10T17:26:57.260Z"}
+{"type":"file_opened","path":"C:[REDACTED_PATH] Objects/Projects/SeatGrab-backend/src/main/java\n...[truncated]","ts":"2026-10-10T17:26:58.298Z"}
+{"type":"snippet_selected","path":"C:[REDACTED_PATH] Objects/Projects/SeatGrab-backend/src/main/java\n...[truncated]","lines":[1,3],"ts":"2026-10-10T17:26:58.365Z"}
+{"type":"chat_started","chat_id":"deeb5ff3-0df8-4d8d-b009-dca3c9b35e2c","first_user_text_preview":"Start a companion investigation for a possible Refact product issue.\n\nImportant:","ts":"2026-10-10T17:27:08.196524100Z"}
+{"type":"file_opened","path":"C:[REDACTED_PATH] Objects/Projects/SeatGrab-backend/src/main/java\n...[truncated]","ts":"2026-10-10T17:29:17.896Z"}
+{"type":"file_opened","path":"C:[REDACTED_PATH] Objects/Projects/SeatGrab-backend/src/main/java\n...[truncated]","ts":"2026-10-10T17:29:20.147Z"}
+{"type":"snippet_selected","path":"C:[REDACTED_PATH] Objects/Projects/SeatGrab-backend/src/main/java\n...[truncated]","lines":[1,3],"ts":"2026-10-10T17:29:20.282Z"}
+{"type":"file_opened","path":"C:[REDACTED_PATH] Objects/Projects/SeatGrab-backend/src/main/java\n...[truncated]","ts":"2026-10-10T17:29:20.710Z"}
+{"type":"snippet_selected","path":"C:[REDACTED_PATH] Objects/Projects/SeatGrab-backend/src/main/java\n...[truncated]","lines":[1,3],"ts":"2026-10-10T17:29:20.846Z"}
+{"type":"file_opened","path":"C:[REDACTED_PATH] Objects/Projects/SeatGrab-backend/src/main/java\n...[truncated]","ts":"2026-10-10T17:30:22.977Z"}
+{"type":"file_opened","path":"C:[REDACTED_PATH] Objects/Projects/SeatGrab-backend/src/main/java\n...[truncated]","ts":"2026-10-10T17:30:26.296Z"}
+{"type":"snippet_selected","path":"C:[REDACTED_PATH] Objects/Projects/SeatGrab-backend/src/main/java\n...[truncated]","lines":[1,2],"ts":"2026-10-10T17:30:26.433Z"}
+{"type":"file_opened","path":"C:[REDACTED_PATH] Objects/Projects/SeatGrab-backend/src/main/java\n...[truncated]","ts":"2026-10-10T17:30:26.633Z"}
+{"type":"snippet_selected","path":"C:[REDACTED_PATH] Objects/Projects/SeatGrab-backend/src/main/java\n...[truncated]","lines":[1,3],"ts":"2026-10-10T17:30:26.722Z"}
