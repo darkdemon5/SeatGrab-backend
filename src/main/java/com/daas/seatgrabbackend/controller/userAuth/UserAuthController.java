@@ -19,7 +19,7 @@ public class UserAuthController {
 
 
     @GetMapping("/me")
-    public ResponseEntity<?> getUser(String userId){
+    public ResponseEntity<?> getUser(@RequestBody String userId){
 
         return userAuthService.getUser(userId);
     }

@@ -9,6 +9,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
+import java.time.LocalDateTime;
 import java.util.Map;
 import java.util.Optional;
 import java.util.UUID;
@@ -42,10 +43,10 @@ public class UserAuthService {
     public ResponseEntity<?> signUpUser(UserSignupRequestDto userSignupRequestDto){
         String email = userSignupRequestDto.getEmail();
         if (userRepo.existsUserByEmail(email)){
-            return ResponseEntity.status(HttpStatus.ACCEPTED).body(Map.of("Message", "Invalid Credentials"));
+            return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(Map.of("Message", "Invalid Credentials"));
         }
 
-        User user = new User(UUID.randomUUID().toString(), userSignupRequestDto.getName(), email, passwordEncoder.encode(userSignupRequestDto.getPassword()), userSignupRequestDto.getDob(), userSignupRequestDto.getCity(), userSignupRequestDto.getBookingsId(), userSignupRequestDto.getPaymentsId(), userSignupRequestDto.getTicketsId(), userSignupRequestDto.isEmailVerified(), userSignupRequestDto.getCreatedAt());
+        User user = new User(UUID.randomUUID().toString(), userSignupRequestDto.getName(), email, passwordEncoder.encode(userSignupRequestDto.getPassword()), userSignupRequestDto.getDob(), userSignupRequestDto.getCity(), userSignupRequestDto.getBookingsId(), userSignupRequestDto.getPaymentsId(), userSignupRequestDto.getTicketsId(), userSignupRequestDto.isEmailVerified(), LocalDateTime.now());
         User savedUser = userRepo.save(user);
 
         UserSignupReponseDto userSignupReponseDto = new UserSignupReponseDto(savedUser.getId(), savedUser.getName(),
@@ -58,20 +59,20 @@ public class UserAuthService {
     public ResponseEntity<?> signInUser(UserSigninRequestDto userSigninRequestDto){
         String email = userSigninRequestDto.getEmail();
         if(!userRepo.existsUserByEmail(email)){
-            return ResponseEntity.status(HttpStatus.ACCEPTED).body(Map.of("Message", "Invalid Credentials"));
+            return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(Map.of("Message", "Invalid Credentials"));
         }
 
         Optional<User> user = userRepo.findUserByEmail(email);
         User foundUser = user.orElseThrow();
 
 
-        if(passwordEncoder.matches(userSigninRequestDto.getPassword(), foundUser.getPassword())){
-            return ResponseEntity.status(HttpStatus.ACCEPTED).body(Map.of("Message", "Invalid Credentials"));
+        if(!passwordEncoder.matches(userSigninRequestDto.getPassword(), foundUser.getPassword())){
+            return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(Map.of("Message", "Invalid Credentials pass"));
         }
         UserSigninResponseDto userSigninResponseDto = new UserSigninResponseDto(foundUser.getId(), foundUser.getName(),
                 foundUser.getEmail(), foundUser.getDob(), foundUser.getCity(), foundUser.getBookingsId(), foundUser.getPaymentsId(),
                 foundUser.getTicketsId(), foundUser.isEmailVerified(), foundUser.getCreatedAt());
 
-        return ResponseEntity.status(HttpStatus.CREATED).body(Map.of("message", "Signed In!!!", "user data", userSigninResponseDto));
+        return ResponseEntity.status(HttpStatus.ACCEPTED).body(Map.of("message", "Signed In!!!", "user data", userSigninResponseDto));
     }
 }
